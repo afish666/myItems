@@ -1,0 +1,296 @@
+body {
+    background-color: #f4f4f4;
+}
+
+/* 头部开始 */
+.header {
+    height: 140px;
+    border-bottom: 1px solid #ddd;
+}
+
+.wrap {
+    width: 1190px;
+    margin: auto;
+}
+
+.header-box {
+    position: relative;
+    height: 140px;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 190px;
+    height: 120px;
+    /* background-image: url("../images/80afe4b365931a5d.jpg");
+    background-size: cover; */
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* 容器大小为父元素大小 */
+    background-image: url("../images/80afe4b365931a5d.jpg");
+    background-size: cover;
+    /*设置背景图铺满容器*/
+}
+
+.search {
+    width: 100%;
+    height: 60px;
+}
+
+.search-m {
+    position: relative;
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.search_logo {
+    display: none;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 125px;
+    height: 40px;
+    background: url(../images/sprite.png) no-repeat;
+    background-position: 0 -120px;
+}
+
+.form {
+    position: absolute;
+    left: 260px;
+    top: 25px;
+    width: 546px;
+    height: 32px;
+    border: 2px solid #e2231a;
+
+}
+
+.keyword {
+    position: absolute;
+    top: 0;
+    width: 425px;
+    height: 26px;
+    padding: 2px 44px 2px 17px;
+    border: 1px solid transparent;
+    line-height: 26px;
+    font-size: 12px;
+    color: black;
+    outline: none;
+}
+
+.form button {
+    position: absolute;
+    right: 0;
+    width: 58px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #e1251b;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    transition: background .2s ease;
+}
+
+.search_helper {
+    z-index: 10;
+    position: absolute;
+    top: 34px;
+    display: none;
+    width: 488px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 1px 2px rgb(0 0 0/20%);
+}
+
+.search_helper p {
+    font-size: 12px;
+    height: 24px;
+    padding: 1px 6px;
+    line-height: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+/* 头部吸顶样式 */
+@keyframes searchTop {
+    0% {
+        top: -50px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.search-fix {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #f10214;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+    animation: searchTop .5s ease-in-out;
+}
+
+/* 头部结束 */
+
+/* 轮播图开始 */
+.banner {
+    width: 100%;
+    height: 470px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    background-color: skyblue;
+}
+
+.banner_box {
+    height: 470px;
+    background-color: red;
+}
+
+.banner_slice {
+    width: 790px;
+    height: 470px;
+    margin: 0 auto;
+    background-color: green;
+}
+
+.slide {
+    position: relative;
+    width: 590px;
+    height: 470px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    background-color: rgba(0, 0, 0, .15);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.prev {
+    border-radius: 0 18px 18px 0;
+    left: 0;
+}
+
+.next {
+    border-radius: 18px 0 0 18px;
+    right: 0;
+}
+
+.banner_btn {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    width: 120px;
+    height: 15px;
+}
+
+.banner_btn li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgba(0, 0, 0, .05);
+    margin-right: 4px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.banner_btn .active {
+    position: relative;
+    top: -2px;
+    width: 9px;
+    height: 9px;
+    border: 3px solid rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* 轮播图结束 */
+
+/* 主体开始 */
+.content {
+    position: relative;
+    width: 100%;
+}
+
+.miaosha {
+    width: 100%;
+    height: 260px;
+    margin-bottom: 20px;
+    background-color: palegoldenrod;
+}
+
+.youxuan {
+    height: 900px;
+    margin-bottom: 20px;
+    background-color: paleturquoise;
+}
+
+.guangchang {
+    height: 1005px;
+    margin-bottom: 20px;
+    background-color: palevioletred;
+}
+
+.tuijian {
+    height: 1870px;
+    background-color: plum;
+}
+
+/* 主体结束 */
+
+/* 楼层开始 */
+.elevator {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: 615px;
+    width: 58px;
+    height: 252px;
+    text-align: center;
+}
+
+.elevator a {
+    display: block;
+    width: 58px;
+    height: 38px;
+    line-height: 19px;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0;
+    transition: color .2s ease;
+    background-color: #fff;
+}
+
+.elevator-fix {
+    position: fixed;
+    top: 75px;
+    animation: eleshow 0.5s ease;
+}
+
+@keyframes eleshow {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 75px;
+    }
+}
+
+/* 楼层结束 */
