@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱上音乐盒</title>
+
+    <!-- 引入一个css样式 -->
+    <link rel="stylesheet" href="css/music.css" </head>
+
+<body>
+    <!-- 横幅的开始 这个就是一个盒子里放无序列表 五张图片-->
+    <div class="banner">
+        <ul>
+            <li class="m1" datasrc="mp3/1.mp3" title="5:10a.m">
+                <img src="img/1.jpg" width="65" />
+            </li>
+            <li class="m2" datasrc="mp3/2.mp3" title="secret base">
+                <img src="img/2.jpg" width="90" />
+            </li>
+            <li class="m3" datasrc="mp3/3.mp3" title="Secret Love">
+                <img src="img/3.jpg" width="119" />
+            </li>
+            <li class="m4" datasrc="mp3/4.mp3" title="无人区玫瑰">
+                <img src="img/4.jpg" width="90" />
+            </li>
+            <li class="m5" datasrc="mp3/5.mp3" title="夏天的夏">
+                <img src="img/5.jpg" width="65" />
+            </li>
+        </ul>
+    </div>
+    <!-- 横幅的结束 -->
+
+    <!-- 这个就是一个音乐播放器 有封面名字 还有三个按钮 以及隐藏音乐播放器的功能-->
+    <div class="music">
+        <div class="m_img">
+            <img src="img/1.jpg" width="90" />
+        </div>
+        <div class="m_text">5:10a.m-傻子与白痴</div>
+        <div class="m_btn">
+            <a href="#" class="m_prev" title="上一首"></a>
+            <a href="#" class="m_play" title="播放"></a>
+            <!-- <a href="#" class="m_pause" title="暂停"></a> -->
+            <a href="#" class="m_next" title="下一首"></a>
+        </div>
+        <div class="m_close m_open"></div>
+        <audio src="mp3/1.mp3" class="m_mp3"></audio>
+    </div>
+
+
+    <!-- 引入jQuery核心文件 -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/music.js"></script>
+
+</body>
+
+</html>
